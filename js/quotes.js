@@ -1,10 +1,10 @@
 // Treehouse Random Quote Generator
-// Author: Cat Carbonell (@catcarbonell)
 
 // List of various quotes 
 
 var quotes = [
 
+    
     //Obligatory Bruce Lee quote
     { 
         quote: 'Absorb what is useful, Discard what is not, Add what is uniquely your own.',
@@ -44,12 +44,23 @@ var quotes = [
         citation: 'Rick and Morty',
         tags: 'love'
     },
+
+
     
     { 
         quote: 'There is no rest for the weary and wounded until the job is done',
-        source: 'Peggy Carter',
+        source: 'Margaret \'Peggy\' Carter',
         citation: 'Marvel\'s Agent Carter',
         tags: 'motivational'
+    },
+
+
+    { 
+        quote: 'Friendship ... is born at the moment when one man says to another "What! You too? I thought that no one but myself . . .',
+        source: 'C.S. Lewis',
+        citation: 'The Four Loves',
+        tags: 'friendship'
     }
+
 
 ];
