@@ -7,7 +7,7 @@ var quotes = [
     
     //Obligatory Bruce Lee quote
     { 
-        quote: 'Absorb what is useful, Discard what is not, Add what is uniquely your own.',
+        quote: 'Absorb what is useful, discard what is not, add what is uniquely your own.',
         source: 'Bruce Lee',
         tags: 'motivational'
     },
@@ -59,7 +59,7 @@ var quotes = [
         quote: 'Friendship ... is born at the moment when one man says to another "What! You too? I thought that no one but myself . . .',
         source: 'C.S. Lewis',
         citation: 'The Four Loves',
-        tags: 'friendship'
+        tags: 'humor'
     }
 
 

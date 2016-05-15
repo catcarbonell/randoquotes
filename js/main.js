@@ -7,6 +7,9 @@ var startQuote = function(){ printRandomQuote(quotes)}
 
 document.getElementById('loadQuote').addEventListener("click", startQuote, false);
 
+document.getElementById('streamQuote').addEventListener("click", streamQuote, false);
+
+document.getElementById('stopStream').addEventListener("click", stopStream, false);
 
 // Getting the class elements labeled 'tagged'
 var taggedClassObj = document.getElementsByClassName('tagged');
@@ -45,7 +48,7 @@ function print(message) {
 function getRandomQuote(quotesarray) {
         
         var quoteObject = quotesarray[Math.floor(Math.random() * quotesarray.length)];
-        console.log(quotesarray)
+        //console.log(quotesarray)
         //console.log(quotes.length);
 
         return quoteObject;
@@ -67,6 +70,7 @@ function printRandomQuote(quotearray) {
         print(message);
         message = '';
        
+
 }
 
 function getTaggedQuotes(mytag) {
@@ -90,5 +94,26 @@ function getTaggedQuotes(mytag) {
 
 }
 
+// Interval Quote Stream
 
+// Start with a blank slate...
+var interval = '';
+
+// The function called when clicked
+function streamQuote() { 
+
+    function foo() {
+        // print random quote!
+        printRandomQuote(quotes);
+    }
+    console.log('start');
+   interval = setInterval(foo, 9001);
+
+    }
+
+// STAHP.
+function stopStream(){
+    console.log('stop');
+     clearInterval(interval);
+}
 
